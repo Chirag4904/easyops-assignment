@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./styles.css" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+		<script src="https://code.iconify.design/3/3.0.1/iconify.min.js"></script>
+
+		<title>Document</title>
+	</head>
+	<body>
+		<div class="container">
+			<form id="contact" action="" method="post">
+				<div class="name-inputs">
+					<fieldset>
+						<input
+							id="f-name"
+							placeholder="First Name"
+							type="text"
+							tabindex="1"
+							required
+							autofocus
+						/>
+					</fieldset>
+					<fieldset>
+						<input
+							id="l-name"
+							placeholder="Last Name"
+							type="text"
+							tabindex="2"
+							required
+							autofocus
+						/>
+					</fieldset>
+				</div>
+
+				<fieldset>
+					<input
+						id="phoneNum"
+						placeholder="Phone Number"
+						type="tel"
+						tabindex="3"
+						required
+					/>
+				</fieldset>
+				<fieldset>
+					<button
+						name="submit"
+						type="submit"
+						id="contact-submit"
+						data-submit="...Sending"
+					>
+						Submit
+					</button>
+				</fieldset>
+			</form>
+		</div>
+
+		<!-- search element -->
+
+		<div class="search-box ok">
+			<input
+				id="searching"
+				class="search-input"
+				type="text"
+				placeholder="Search user"
+			/>
+			<button class="search-btn">
+				<span
+					class="iconify icon"
+					data-icon="material-symbols:person-search-outline"
+				></span>
+			</button>
+
+			<div id="names-list" class="hide"></div>
+		</div>
+
+		<!-- table -->
+		<table id="contactTable">
+			<thead>
+				<tr class="thead">
+					<th scope="col">S No.</th>
+					<th id="sort-btn" scope="col">Name</th>
+					<th scope="col">Contact</th>
+					<th scope="col">Delete</th>
+				</tr>
+			</thead>
+
+			<tbody></tbody>
+		</table>
+	</body>
+	<script src="./index.js"></script>
+</html>
